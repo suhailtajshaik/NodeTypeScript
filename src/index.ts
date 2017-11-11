@@ -1,8 +1,11 @@
-const a:number = 3;
-const b:number = 5;
-const sum:any = (x:number,y:number,callback:any)=>callback(x+y);
+import app from './server/App';
 
-sum(a,b,(res:number)=>{
-        console.log(res);
-    }
-);
+const port = process.env.PORT || 3001
+
+app.listen(port, (err) => {
+  if (err) {
+    return console.log(err)
+  }
+
+  return console.log(`server is listening on ${port}`)
+})

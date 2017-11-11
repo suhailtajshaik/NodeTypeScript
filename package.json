@@ -5,9 +5,10 @@
   "main": "lib/index",
   "typings": "lib/index",
   "scripts": {
-    "start": "yarn build:live",
-    "build:live": "nodemon ./node_modules/typescript/lib/tsc -p .",
-    "clean:project": "rm -rf lib node_modules"
+    "start": "node ./dist/index",
+    "start:dev": "yarn build:live",
+    "build:live": "tslint -c tslint.json src/**/*.ts && nodemon ./node_modules/typescript/lib/tsc -p .",
+    "clean:project": "rm -rf lib node_modules ./**/**/*.map"
   },
   "keywords": [],
   "author": "Suhail Taj Shaik <suhailtajshaik@gmail.com>",
@@ -16,5 +17,9 @@
     "@types/node": "^8.0.51",
     "nodemon": "^1.12.1",
     "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mocha": "^4.0.1"
   }
 }
