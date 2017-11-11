@@ -1,0 +1,20 @@
+{
+  "name": "node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index",
+  "typings": "lib/index",
+  "scripts": {
+    "start": "yarn clean:project && yarn build:live",
+    "build:live": "nodemon ./node_modules/typescript/lib/tsc -p .",
+    "clean:project": "rm -rf lib node_modules && yarn install"
+  },
+  "keywords": [],
+  "author": "Suhail Taj Shaik <suhailtajshaik@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.51",
+    "nodemon": "^1.12.1",
+    "typescript": "^2.6.1"
+  }
+}
