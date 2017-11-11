@@ -1,5 +1,5 @@
 # NodeTypeScript
-Node Js using TypeScript Scaffold
+Node Js using TypeScript Scaffold. Good place to start writing node modules.
 
 ### Running the project
 
