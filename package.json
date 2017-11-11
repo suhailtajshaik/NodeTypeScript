@@ -5,7 +5,7 @@
   "main": "lib/index",
   "typings": "lib/index",
   "scripts": {
-    "start": "yarn clean:project && yarn build:live",
+    "start": "yarn install && yarn build:live",
     "build:live": "nodemon ./node_modules/typescript/lib/tsc -p .",
     "clean:project": "rm -rf lib node_modules"
   },
