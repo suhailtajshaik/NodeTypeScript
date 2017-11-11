@@ -7,7 +7,7 @@
   "scripts": {
     "start": "yarn clean:project && yarn build:live",
     "build:live": "nodemon ./node_modules/typescript/lib/tsc -p .",
-    "clean:project": "rm -rf lib node_modules && yarn install"
+    "clean:project": "rm -rf lib node_modules"
   },
   "keywords": [],
   "author": "Suhail Taj Shaik <suhailtajshaik@gmail.com>",
